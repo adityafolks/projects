@@ -1,0 +1,205 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<title>Untitled Document</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.reveal.js"></script>
+<script>
+$(function() {
+			// Clickable Dropdown
+			$('.click-nav > ul').toggleClass('no-js js');
+			$('.click-nav .js ul').hide();
+			$('.click-nav .js').click(function(e) {
+				$('.click-nav .js ul').slideToggle(200);
+				$('.clicker').toggleClass('active');
+				e.stopPropagation();
+			});
+			$(document).click(function() {
+				if ($('.click-nav .js ul').is(':visible')) {
+					$('.click-nav .js ul', this).slideUp();
+					$('.clicker').removeClass('active');
+				}
+			});
+		});
+</script>
+</head>
+<body>
+<div class="row menu-top">
+	<div class="gridContainer clearfix">
+      <div id="LayoutDiv1">Selamat Datang, Muhammad Iqbal | <a href="#">Logout</a></div>
+    </div>
+</div>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+  	<div class="row header"><img src="images/header.png"></div>
+    <div class="menu">
+    	<div class="menu-link"><a href="index.html">HOME</a></div>
+        <div class="menu-link"><a href="gallery.html">GALLERY</a></div>
+        <div class="menu-link"><a href="syarat.html">SYARAT & KETENTUAN</a></div>
+        <div class="menu-link"><a href="registrasi.html">REGISTRASI</a></div>
+        <div class="menu-link"><a href="#" data-reveal-id="myModal">LOGIN</a></div>
+        <!-- MENU MOBILE-->
+        <a href="#" data-reveal-id="myModal"><div class="login-mobile">LOGIN</div></a>
+        <div class="click-nav">
+			<ul class="no-js">
+				<li><a class="clicker"><img src="images/menu-dd.png"></a>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="syarat.html">SYARAT & KETENTUAN</a></li>
+						<li><a href="registrasi.html">REGISTRASI</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+        <!-- END MENU MOBILE-->
+    </div>
+    <div class="content-kanal">
+	  <h2>SYARAT & KETENTUAN</h2>
+      <h3>KETENTUAN KONTES FOTO ONLINE</h3><br>
+      <h3>Peserta</h3>
+      <p>Peserta adalah seluruh fotografer (profesional dan amatir) yang telah mendaftarkan diri di web ini.<br>
+      <a href="registrasi.html"><em>Belum terdaftar? Daftar disini.</em></a></p>
+      <p><em>*Karyawan National Geographic Indonesia dan keluarga intinya (pasangan, orang tua, anak, adik, atau kakak) tidak diperkenankan mengikuti kontes ini.</em> </p><br>
+      <h3>TEMA</h3>
+      <h4>Potret SMART CITY bersama Bintaro Jaya.</h4><br>
+      <h3>Objek Foto</h3>
+      <h4>Ruang terbuka, Transportasi, Komunitas Manusia dan Energi dalam kawasan Bintaro Jaya. <br>*(ID Card dan Surat Ijin Memotret Dalam Kawasan Bintaro, klik)</h4><br>
+      <h3>Persyaratan Umum</h3>
+      <ol>
+      	<li>Foto yang dikirimkan hanya dalam bentuk digital.</li>
+        <li>Foto yang dikirim belum pernah mengikuti dan memenangkan kontes apa pun. </li>
+        <li>Tidak ada batasan waktu pengambilan foto.</li>
+        <li>Setiap peserta dapat mengirimkan lebih dari 1 foto.</li>
+        <li>Foto yang dikirimkan bisa dihasilkan dari Kamera Digital apapun (kecuali kamera ponsel).</li>
+      </ol>
+      <br>
+      <h3>Materi Foto</h3>
+      <ol>
+      	<li>Dimensi terpanjang minimal 1024 piksel 72 dpi.</li>
+        <li>Ukuran fisik berkas foto maksimal 2 Mb.</li>
+        <li>Tidak diperkenankan menambahkan bingkai / latar belakang / tulisan (watermark) dalam bentuk apapun. </li>
+        <li>Modus foto berwarna atau duotone (misal: hitam putih). </li>
+        <li>Foto tidak mengandung materi SARA dan/atau pornografi. </li>
+        <li>Hanya foto dalam format digital (JPG) yang akan dijurikan </li>
+        <li>Setiap peserta yang telah dinyatakan sebagai pemenang wajib menyerahkan berkas foto High Resolution minimal 300 dpi, dimensi terpanjang minimal 2500 piksel.</li>
+      </ol>
+      <br>
+      <h3>Aturan Khusus</h3>
+      <ol>
+      	<li>Tidak diperkenankan menggunakan filter pada aplikasi penyuntingan foto.</li>
+        <li>Foto high dynamic range (HDR) tidak diperkenankan. </li>
+        <li>Pengirim foto diharapkan sudah melengkapi informasi profil di Fotokita.net. Informasi yang dimaksud adalah nama, alamat, nomor telepon, serta alamat e-mail (Penting untuk proses konfirmasi dan verifikasi finalis). </li>
+        <li>Penyuntingan minor, seperti cropping, koreksi brightness/contrast, burning (terbatas), dodging (terbatas), koreksi warna, masih bisa diterima. Penggunaan lensa fisheye diperbolehkan selama tidak berlebihan  dan menonjolkan objek foto.</li>
+      </ol>
+      <br>
+      <h3>Perjanjian Umum</h3>
+      <ol>
+      	<li>Dengan mengirimkan foto, berarti peserta secara otomatis menerima segala kondisi sebagaimana yang tercantum dalam ketentuan di atas. </li>
+        <li>Entri yang tidak sesuai dengan ketentuan akan didiskualifikasi. </li>
+        <li>Setiap peserta harus menjamin bahwa publikasi semua foto oleh Majalah National Geographic & BINTARO JAYA tidak akan memunculkan masalah hukum dikemudian hari.</li>
+        <li>Foto harus merupakan hasil karya yang orisinal yang dibuat oleh peserta. Foto yang dimasukkan ke dalam kontes tidak boleh bermasalah dengan hak cipta, merek dagang, moral, privasi dengan seseorang atau institusi. Foto tidak boleh mengandung pornografi serta fitnah dan kebencian. </li>
+        <li>Dengan mengirimkan foto ke kontes, pengirim setuju memberikan hak non-eksklusif kepada National Geographic Indonesia dan BINTARO JAYA untuk memperbanyak, mendistribusikan, serta menayangkan foto untuk keperluan promosional lomba di media cetak dan elektronik. Dan foto pemenang akan digunakan BINTARO JAYA dalam materi komunikasi below-the-line antara lain kalender, agenda, profil korporasi, laporan tahunan dll. Untuk penggunaan foto yang bersifat iklan (above-the-line) maka BINTARO JAYA akan memberikan informasi lebih lanjut. </li>
+      </ol><br>
+      <h3>MODEL RELEASE & PROPERTY RELEASE</h3>
+      <p>Ketika diminta, setiap pengirim foto (fotografer) bertanggung jawab untuk menyediakan bukti tertulis bahwa subyek fotonya (manusia yang ditampilkan wajahnya secara jelas atau menjadi bagian terbesar dalam frame foto) telah mengizinkan bahwa foto yang memuat dirinya itu diikutkan lomba dan dipublikasikan. Hal yang sama berlaku apabila subjek/objek fotonya adalah properti atau hasil karya intelektual (milik orang/lembaga/atau instansi tertentu).</p><br>
+      <h3>Periode</h3>
+      <p>Periode lomba: 14 Maret - 29 April 2016</p><br>
+      <h3>Penjurian</h3>
+      <p>Proses penjurian foto akan dilakukan oleh National Geographic Indonesia dan BINTARO JAYA pada tanggal 5 – 12 Mei 2016 untuk menentukan 3 Foto Terbaik dan 3 Foto Harapan.</p><br>
+      <h3>Pengumuman Pemenang</h3>
+      <p>Pengumuman pemenang lomba foto ini akan dilaksanakan pada tanggal 16 Mei 2016</p><br>
+      <h3>Hadiah Kontes</h3>
+      <h3>Juara Umum</h3>
+      <ul>
+      	<li>Juara 1: 	Rp. 15.000.000 </li>
+        <li>Juara 2: 	Rp. 10.000.000 </li>
+        <li>Juara 3: 	Rp. 7.500.000</li>
+      </ul>
+      <h3>Juara harapan</h3>
+      <ul>
+      	<li>Harapan 1: 	Rp. 5.000.000 </li>
+        <li>Harapan 2: 	Rp. 3.000.000 </li>
+        <li>Harapan 3: 	Rp. 2.000.000</li>
+      </ul><br>
+      <h3>Pemenang 2 Mingguan: 3 Foto Terbaik Mendapatkan Tas NATIONAL GEOGRAPHIC NG-A1222 HORIZONTAL POUCH</h3>
+      <p><em>*Pajak Hadiah ditanggung Pemenang sesuai dengan Tarif Pajak Penghasilan (Pph) 21 Pasal 17.</em></p><br>
+      <h3>DEWAN JURI</h3>
+      <ul>
+      	<li>Didi Kaspi Kasim – Editor in Chief National Geographic Indonesia</li>
+        <li>Ferie Latief – Freelance Fotografer National Geographic Indonesia</li>
+        <li>Perwakilan Bintaro Jaya *TBC</li>
+        <li>Komunitas Fotografi Bintaro</li>
+      </ul>
+	</div>
+  </div>
+</div>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+  	<div class="footer">
+    	<div class="logo-sponsor"><img src="images/sponsor.png"></div>
+    </div>
+    	<div id="myModal" class="reveal-modal medium">
+			<div class="popup-header">LOGIN</div>
+			<div class="field-reg"><input type="text" required class="login-reg" placeholder="EMAIL" name="email" results="10"></div>
+            <div class="field-reg"><input type="password" required class="login-reg" placeholder="PASSWORD" name="password" results="10"></div>
+            <div class="lostpass">
+            	<span><a href="#">Lupa Password?</a></span>
+                <button class="login" data-wow-duration="500ms" data-wow-delay="500ms">LOGIN</button>
+              	<button class="login" data-wow-duration="500ms" data-wow-delay="500ms">REG</button>
+            </div>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+        <div id="myModal1" class="reveal-modal medium">
+			<div class="popup-header">UPLOAD FOTO</div>
+			<div class="field-reg"><input name="" type="file" class="login-reg"></div>
+            <div class="field-caption"><textarea name="" cols="" rows="4" class="login-reg"></textarea></div>
+            <div class="lostpass">
+            	<h5>CHOOSE CATEGORY</h5>
+                <table width="100%" border="0" cellspacing="1" cellpadding="5">
+                  <tr>
+                    <td><input type="radio" id="radio01" name="radio" /><label for="radio01"><span></span>RUANG TERBUKA</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" id="radio02" name="radio" /><label for="radio02"><span></span>TRANSPORTASI</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" id="radio03" name="radio" /><label for="radio03"><span></span>MANUSIA & KOMUNITAS</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" id="radio04" name="radio" /><label for="radio04"><span></span>ENERGI</label></td>
+                  </tr>
+                </table>
+            </div>
+            <div class="lostpass"><button class="login" data-wow-duration="500ms" data-wow-delay="500ms">UPLOAD</button></div>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+  </div>
+</div>
+</body>
+</html>

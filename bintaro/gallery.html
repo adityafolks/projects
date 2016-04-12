@@ -1,0 +1,237 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<title>Untitled Document</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.reveal.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script>
+$(document).ready(function() {
+			$('.fancybox').fancybox();
+		});
+</script>
+<script>
+$(function() {
+			// Clickable Dropdown
+			$('.click-nav > ul').toggleClass('no-js js');
+			$('.click-nav .js ul').hide();
+			$('.click-nav .js').click(function(e) {
+				$('.click-nav .js ul').slideToggle(200);
+				$('.clicker').toggleClass('active');
+				e.stopPropagation();
+			});
+			$(document).click(function() {
+				if ($('.click-nav .js ul').is(':visible')) {
+					$('.click-nav .js ul', this).slideUp();
+					$('.clicker').removeClass('active');
+				}
+			});
+		});
+</script>
+</head>
+<body>
+<div class="row menu-top">
+	<div class="gridContainer clearfix">
+      <div id="LayoutDiv1">Selamat Datang, Muhammad Iqbal | <a href="#">Logout</a></div>
+    </div>
+</div>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+  	<div class="row header"><img src="images/header.png"></div>
+    <div class="menu">
+    	<div class="menu-link"><a href="index.html">HOME</a></div>
+        <div class="menu-link"><a href="gallery.html">GALLERY</a></div>
+        <div class="menu-link"><a href="syarat.html">SYARAT & KETENTUAN</a></div>
+        <div class="menu-link"><a href="registrasi.html">REGISTRASI</a></div>
+        <div class="menu-link"><a href="#" data-reveal-id="myModal">LOGIN</a></div>
+    	<!-- MENU MOBILE-->
+        <a href="#" data-reveal-id="myModal"><div class="login-mobile">LOGIN</div></a>
+        <div class="click-nav">
+			<ul class="no-js">
+				<li><a class="clicker"><img src="images/menu-dd.png"></a>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="syarat.html">SYARAT & KETENTUAN</a></li>
+						<li><a href="registrasi.html">REGISTRASI</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+        <!-- END MENU MOBILE-->
+    </div>
+    
+    <div class="bc">GALLERY
+    	<a href="#" data-reveal-id="myModal1"><div class="upload">Upload Foto</div></a>
+    </div>
+    <div class="row">
+    	<div class="filter">
+                	<form class="form-horizontal">
+                          <select class="form-control select">
+                          	<option>All Category</option>
+                          	<option>Ruang Terbuka</option>
+                            <option>Transportasi</option>
+                            <option>Manusia & Komunitas</option>
+                            <option>Energi</option>                         
+                          </select>
+                          <button class="submit-gallery" data-wow-duration="500ms" data-wow-delay="500ms">SUBMIT</button>
+                      </form>
+		</div>
+        <div class="clearfix"></div>
+      <div class="col-latest">
+      	<a class="fancybox" href="images/dummy/4.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet">
+      	<div class="thumbnail-latest" style="background:url(images/dummy/4.jpg) center; background-size:cover">
+        	<div class="thumbnail-title"><p>Ruang Terbuka</p><span>Oleh: Muhammad Iqbal</span></div>
+        </div>
+        </a>
+      </div>
+      <div class="col-latest">
+      	<a class="fancybox" href="images/dummy/5.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet">
+      	<div class="thumbnail-latest" style="background:url(images/dummy/5.jpg) center; background-size:cover">
+        	<div class="thumbnail-title"><p>Energi</p><span>Oleh: Muhammad Iqbal</span></div>
+        </div>
+        </a>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Transportasi</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/3.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/3.jpg"></a>
+        </div>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Ruang Terbuka</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/1.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/1.jpg"></a>
+        </div>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Energi</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/2.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/2.jpg"></a>
+        </div>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Transportasi</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/3.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/3.jpg"></a>
+        </div>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Ruang Terbuka</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/1.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/1.jpg"></a>
+        </div>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Energi</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/2.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/2.jpg"></a>
+        </div>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Transportasi</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/3.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/3.jpg"></a>
+        </div>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Ruang Terbuka</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/1.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/1.jpg"></a>
+        </div>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Energi</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/2.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/2.jpg"></a>
+        </div>
+      </div>
+      <div class="col-latest">
+      	<div class="thumbnail-latest">
+        	<div class="thumbnail-title"><p>Transportasi</p><span>Oleh: Muhammad Iqbal</span></div>
+        	<a class="fancybox" href="images/dummy/3.jpg" data-fancybox-group="gallery" title="MUHAMMAD IQBAL - Lorem ipsum dolor sit amet"><img src="images/dummy/3.jpg"></a>
+        </div>
+      </div>
+      <nav class="line-paging">
+						<ul class="pagination pagination-sm">
+							<li><a href="#"><span><span aria-hidden="true">&laquo;</span></span></a></li>
+							<li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+							<li><a href="#"><span>2</span></a></li>
+                            <li><a href="#"><span>3</span></a></li>
+							<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+						</ul>
+			</nav>
+    </div>
+  </div>
+</div>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+  	<div class="footer">
+    	
+        <div class="logo-sponsor"><img src="images/sponsor.png"></div>
+    </div>
+    	<div id="myModal" class="reveal-modal medium">
+			<div class="popup-header">LOGIN</div>
+			<div class="field-reg"><input type="text" required class="login-reg" placeholder="EMAIL" name="email" results="10"></div>
+            <div class="field-reg"><input type="password" required class="login-reg" placeholder="PASSWORD" name="password" results="10"></div>
+            <div class="lostpass">
+            	<span><a href="#">Lupa Password?</a></span>
+                <button class="login" data-wow-duration="500ms" data-wow-delay="500ms">LOGIN</button>
+              	<button class="login" data-wow-duration="500ms" data-wow-delay="500ms">REG</button>
+            </div>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+        <div id="myModal1" class="reveal-modal medium">
+			<div class="popup-header">UPLOAD FOTO</div>
+			<div class="field-reg"><input name="" type="file" class="login-reg"></div>
+            <div class="field-caption"><textarea name="" cols="" rows="4" class="login-reg"></textarea></div>
+            <div class="lostpass">
+            	<h5>CHOOSE CATEGORY</h5>
+                <table width="100%" border="0" cellspacing="1" cellpadding="5">
+                  <tr>
+                    <td><input type="radio" id="radio01" name="radio" /><label for="radio01"><span></span>RUANG TERBUKA</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" id="radio02" name="radio" /><label for="radio02"><span></span>TRANSPORTASI</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" id="radio03" name="radio" /><label for="radio03"><span></span>MANUSIA & KOMUNITAS</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" id="radio04" name="radio" /><label for="radio04"><span></span>ENERGI</label></td>
+                  </tr>
+                </table>
+            </div>
+            <div class="lostpass"><button class="login" data-wow-duration="500ms" data-wow-delay="500ms">UPLOAD</button></div>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+  </div>
+</div>
+</body>
+</html>
